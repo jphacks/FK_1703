@@ -1,9 +1,12 @@
-# サンプル（プロダクト名）
+# Grandea ～広げるアイデア～
 
-[![Product Name](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://www.youtube.com/channel/UC4PtjOfZTbVp9DwtJv82Lzg)
+[![Grandea](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://www.youtube.com/channel/UC4PtjOfZTbVp9DwtJv82Lzg)
 
 ## 製品概要
-### X Tech（X → 今回皆さんが選定した好きな言葉に書き換えてください）
+アイデア出しをする際のミーティング中に起動しておくだけで、アイデア出しの補助を行ってくれるアプリです。
+また、話した内容・要約・ミーティングのキーワードをまとめた議事録も作成してくれます。
+
+### Idea Tech
 
 ### 背景（製品開発のきっかけ、課題等）
 ここに
