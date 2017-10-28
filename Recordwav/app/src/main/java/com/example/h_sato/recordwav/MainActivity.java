@@ -251,18 +251,17 @@ public class MainActivity extends AppCompatActivity {
             // resultName = PatternMatching(resultsString );
 
             //results_arrayの中身がないことが、100回あれば一度録音する
-            if(results_array.size()==0){
+            if(resultsString==""){
                 silence_count++;
+                if(silence_count == 100){
+                    Toast.makeText(getApplicationContext(), System.currentTimeMillis() + "何か喋って！" , Toast.LENGTH_LONG).show();
+                    silence_count = 0;
+                    restartListeningService();
+                    record();
+                    finish();
+                }
             } else {
                 silence_count = 0;
-            }
-
-            if(silence_count == 100){
-                Toast.makeText(getApplicationContext(), System.currentTimeMillis() + "何か喋って！" , Toast.LENGTH_LONG).show();
-                silence_count = 0;
-                restartListeningService();
-                record();
-                finish();
             }
 
             // トーストを使って結果表示
