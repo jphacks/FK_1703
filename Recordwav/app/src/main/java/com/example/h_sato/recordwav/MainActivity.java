@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private static final int SAMPLING = 8000;
     private SpeechRecognizer sr;
     private ByteArrayOutputStream baos = new ByteArrayOutputStream(SAMPLING * 2 * 80);
+    int silence_count = 0;
 
 
     // 音声認識を開始する
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
     protected void stopListening() {
         if (sr != null) sr.destroy();
         sr = null;
+        // record();
     }
 
     // 音声認識を再開する
@@ -67,11 +69,11 @@ public class MainActivity extends AppCompatActivity {
         try {
             byte[] b = baos.toByteArray();
             int len = b.length;
-
+/*
             if (len <= 0) {
                 return;
             }
-
+*/
             short type = 1;
             short channel = 1;
             short perSampling = 16;
@@ -248,6 +250,20 @@ public class MainActivity extends AppCompatActivity {
 
             // resultName = PatternMatching(resultsString );
 
+            //results_arrayの中身がないことが、100回あれば一度録音する
+            if(results_array.size()==0){
+                silence_count++;
+            } else {
+                silence_count = 0;
+            }
+
+            if(silence_count == 100){
+                Toast.makeText(getApplicationContext(), System.currentTimeMillis() + "何か喋って！" , Toast.LENGTH_LONG).show();
+                silence_count = 0;
+                restartListeningService();
+                record();
+                finish();
+            }
 
             // トーストを使って結果表示
             //Toast.makeText(getApplicationContext(), resultName, Toast.LENGTH_LONG).show();
