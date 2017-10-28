@@ -1,5 +1,9 @@
 # Grandea ～広げるアイデア～
 
+##Mobile App : https://github.com/jphacks/FK_1703  
+  
+##Server : https://github.com/jphacks/FK_1703_2  
+
 [![Grandea](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://www.youtube.com/channel/UC4PtjOfZTbVp9DwtJv82Lzg)
 
 ## 製品概要
@@ -14,8 +18,7 @@
 を記入してください
 
 ### 製品説明（具体的な製品の説明）
-Grandeaは、アイデア出しをする際のミーティング中に起動しておくだけで、アイデア出しの補助を行ってくれるモバイルアプリケーションです。 
-また、話した内容・要約・ミーティングのキーワードをまとめた議事録も作成してくれます。
+Grandeaは、アイデア出しをする際のミーティング中に起動しておくだけで、アイデア出しの補助を行ってくれるモバイルアプリケーションです。また、話した内容・要約・ミーティングのキーワードをまとめた議事録も作成してくれます。
 
 ### 特長
 
