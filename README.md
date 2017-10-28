@@ -73,7 +73,7 @@ Grandeaは、アイデア出しをする際のミーティング中に起動し�
 #### 2日間に開発した独自の機能・技術
 * サーバ・クライアント間のリアルタイムストリーミング通信  
 * アイデアマップの作成
-* 2つのAPIを用いての関連キーワード取得 (Code)<https://github.com/jphacks/FK_1703_2/blob/master/relation_char.php>
+* 2つのAPIを用いての関連キーワード取得 [(Code)](https://github.com/jphacks/FK_1703_2/blob/master/relation_char.php "relation_char.php")  
 <!--
 * 独自で開発したものの内容をこちらに記載してください
 * 特に力を入れた部分をファイルリンク、またはcommit_idを記載してください（任意
