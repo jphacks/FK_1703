@@ -1,9 +1,9 @@
 # Grandea ～広げるアイデア～
 
-## Mobile App : https://github.com/jphacks/FK_1703  
+### Mobile App : https://github.com/jphacks/FK_1703  
   
-## Server : https://github.com/jphacks/FK_1703_2  
-
+### Server : https://github.com/jphacks/FK_1703_2  
+  
 [![Grandea](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://www.youtube.com/channel/UC4PtjOfZTbVp9DwtJv82Lzg)
 
 ## 製品概要
