@@ -21,11 +21,11 @@
             android:textAppearance="?android:textAppearanceLarge" />
 
         <TextView
-            android:id="@+id/item_created_day"
+            android:id="@+id/item_created_info"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:text="created_day"
+            android:text="created_info"
             android:textAppearance="?android:textAppearanceSmall" />
     </LinearLayout>
 
