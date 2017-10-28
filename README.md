@@ -37,17 +37,23 @@
 #### API・データ
 今回スポンサーから提供されたAPI、製品などの外部技術があれば記述をして下さい。
 
-* 
-* 
-* 
+* Google Cloud Speech API
+* Google Cloud Translation API
+* Google Knowledge Graph Search API
+* Google Suggest API
+* gooラボ キーワード抽出API
+* 自動要約API
 
 #### フレームワーク・ライブラリ・モジュール
-* 
-* 
+* Android Studio
+* XAMPP
+* CherryPy
+* asyncio(非同期I/Oライブラリ)
+* Project Tyrus(Java API for WebSocketのリファレンス実装)
 
 #### デバイス
-* 
-* 
+* Android
+
 
 ### 研究内容・事前開発プロダクト（任意）
 ご自身やチームの研究内容や、事前に持ち込みをしたプロダクトがある場合は、こちらに実績なども含め記載をして下さい。
