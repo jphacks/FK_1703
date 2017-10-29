@@ -4,7 +4,7 @@
   
 ### Server : https://github.com/jphacks/FK_1703_2  
   
-[![Grandea](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://www.youtube.com/channel/UC4PtjOfZTbVp9DwtJv82Lzg)
+[![Grandea](/img/top.png)](https://www.youtube.com/channel/UC4PtjOfZTbVp9DwtJv82Lzg)
 
 ## 製品概要
 話し合っていることを認識してアイデア出しを手助けするモバイルアプリケーション
@@ -21,7 +21,7 @@
 ### 製品説明（具体的な製品の説明）
 Grandeaは、アイデア出しをする際のミーティング中に起動しておくだけで、アイデア出しの補助を行ってくれるモバイルアプリケーションです。また、話した内容・要約・ミーティングのキーワードをまとめた議事録も作成してくれます。
 
-![システムフロー](/flow.png)
+![システムフロー](/img/flow.png)
 
 ### 特長
 
@@ -49,7 +49,6 @@ Grandeaは、アイデア出しをする際のミーティング中に起動し�
 ## 開発内容・開発技術
 ### 活用した技術
 #### API・データ
-* Google Cloud Speech API
 * Google Cloud Translation API
 * Google Knowledge Graph Search API
 * Google Suggest API
@@ -60,25 +59,15 @@ Grandeaは、アイデア出しをする際のミーティング中に起動し�
 * Android Studio
 * XAMPP
 * CherryPy
-* asyncio(非同期I/Oライブラリ)
-* Project Tyrus(Java API for WebSocketのリファレンス実装)
+* Speech Recognizer
 * Amazon Web Services
 * さくらのレンタルサーバ
 
 #### デバイス
 * Android(Android 5.0以上)
 
-<!--
-### 研究内容・事前開発プロダクト（任意）
-ご自身やチームの研究内容や、事前に持ち込みをしたプロダクトがある場合はこちらに実績なども含め記載をして下さい。
--->
-
 ### 独自開発技術（Hack Dayで開発したもの）
 #### 2日間に開発した独自の機能・技術
-* サーバ・クライアント間のリアルタイムストリーミング通信  
-* アイデアマップの作成
-* 2つのAPIを用いての関連キーワード取得 [(Code)](https://github.com/jphacks/FK_1703_2/blob/master/relation_char.php "relation_char.php")  
-<!--
-* 独自で開発したものの内容をこちらに記載してください
-* 特に力を入れた部分をファイルリンク、またはcommit_idを記載してください（任意
--->
+* 音声認識とサーバへのHTTP通信の並列スレッド処理  
+* 独自アイデアマップの作成
+* 文章のキーワードを取得し、そのキーワードから2つのAPIを用いての関連キーワード取得 [(Code)](https://github.com/jphacks/FK_1703_2/blob/master/relation_char.php "relation_char.php")  
