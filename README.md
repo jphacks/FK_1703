@@ -62,7 +62,7 @@ Grandeaは、アイデア出しをする際のミーティング中に起動し�
 * CherryPy
 * asyncio(非同期I/Oライブラリ)
 * Project Tyrus(Java API for WebSocketのリファレンス実装)
-* amazon web services
+* Amazon Web Services
 * さくらのレンタルサーバ
 
 #### デバイス
