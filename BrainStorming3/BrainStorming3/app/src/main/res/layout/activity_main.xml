@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.h_sato.brainstorming3.MainActivity"
+
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <!-- ################# android:backgroundに作成したdrawableを指定 ################# -->
+    <!-- 最初の文字入力するところをとりあえず実装 -->
+    <EditText
+        android:id="@+id/first_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="#ffffff"
+        android:background="@drawable/frame_style"
+        android:imeOptions="actionDone"
+        android:singleLine = "true"
+        android:gravity="center"
+        android:textSize="@dimen/textSizeofNode"
+        />
+
+    <!-- アニメーション用の文字列のためのTextView -->
+    <TextView
+        android:id="@+id/text4animation"
+        android:layout_width="@dimen/biggerTextSizeofView_width"
+        android:layout_height="@dimen/biggerTextSizeofView_height"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textColor="@color/mainText"
+        android:textSize="@dimen/textSizeofNode"/>
+
+    <!-- ################# デフォルトノード（3つ） ################# -->
+    <!-- 上のボタン (以降時計回りに)-->
+    <ImageButton
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sub_frame_style"
+        android:textColor="@color/mainText"
+
+        android:visibility="invisible"
+        android:layout_marginBottom="7dp"
+        android:layout_above="@+id/first_text"
+        android:layout_centerHorizontal="true" />
+    <!-- ノード上の文字 -->
+    <TextView
+        android:id="@+id/textOfbutton2"
+        android:layout_width="@dimen/textSizeofView_width"
+        android:layout_height="@dimen/textSizeofView_height"
+
+        android:layout_below="@+id/imagebutton44"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:gravity="center"
+        android:textColor="@color/mainText"
+        android:textSize="@dimen/textSizeofNode" />
+
+
+    <!-- 右下のボタン -->
+    <ImageButton
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sub_frame_style"
+        android:textColor="@color/mainText"
+
+        android:visibility="invisible"
+        android:layout_alignBaseline="@+id/button4"
+        android:layout_alignBottom="@+id/button4"
+        android:layout_alignLeft="@+id/originalButton2"
+        android:layout_alignStart="@+id/originalButton2" />
+    <!-- ノード上の文字 -->
+    <TextView
+        android:id="@+id/textOfbutton3"
+        android:layout_width="@dimen/textSizeofView_width"
+        android:layout_height="@dimen/textSizeofView_height"
+
+        android:layout_alignTop="@+id/textOfbutton4"
+        android:layout_toEndOf="@+id/first_text"
+        android:layout_toRightOf="@+id/first_text"
+        android:gravity="center"
+        android:textColor="@color/mainText"
+        android:textSize="@dimen/textSizeofNode" />
+
+
+    <!-- 左下のボタン -->
+    <ImageButton
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sub_frame_style"
+        android:textColor="@color/mainText"
+
+        android:visibility="invisible"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_alignBottom="@+id/originalButton3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="66dp" />
+    <!-- ノード上の文字 -->
+    <TextView
+        android:id="@+id/textOfbutton4"
+        android:layout_width="@dimen/textSizeofView_width"
+        android:layout_height="@dimen/textSizeofView_height"
+
+        android:layout_below="@+id/textOfbutton1"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/first_text"
+        android:layout_toStartOf="@+id/first_text"
+        android:gravity="center"
+        android:textColor="@color/mainText"
+        android:textSize="@dimen/textSizeofNode" />
+
+    <!-- ################# 移動後に随時表示する隅のボタンを設定（背景でImageViewをセットに） ################# -->
+    <!-- 下隅のボタン（以降時計回りに）(背景を白くしているのはImageButtonの枠の色を消すため)-->
+    <ImageButton
+        android:id="@+id/imagebutton22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignLeft="@+id/imagebutton55"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imagebutton55"
+        android:background="@color/mainText"
+        android:src="@drawable/for_button22"
+        android:visibility="invisible" />
+    <TextView
+        android:id="@+id/button22_text"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="BUTTON22"
+        android:textColor="@color/mainText"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/textSizeofNode"
+
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp" />
+
+    <!-- 左下隅のボタン -->
+    <ImageButton
+        android:id="@+id/imagebutton33"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/for_button33"
+        android:background="@color/mainText"
+
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/button33_text"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="oriBUTTON22"
+        android:textColor="@color/mainText"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/textSizeofNode"
+
+        android:visibility="invisible"
+        android:layout_alignBottom="@+id/button22_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!-- 左上隅のボタン -->
+    <ImageButton
+        android:id="@+id/imagebutton44"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/for_button44"
+        android:background="@color/mainText"
+
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/button44_text"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/button55_text"
+        android:layout_alignBottom="@+id/button55_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center|bottom"
+        android:textColor="@color/mainText"
+        android:visibility="visible" />
+
+    <!-- 上隅のボタン -->
+    <ImageButton
+        android:id="@+id/imagebutton55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/for_button55"
+        android:background="@color/mainText"
+
+        android:visibility="invisible"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/button55_text"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignLeft="@+id/button22_text"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/button22_text"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="oriBUTTON33"
+        android:textColor="@color/mainText"
+        android:visibility="invisible" />
+
+    <!-- 右上隅のボタン -->
+    <ImageButton
+        android:id="@+id/imagebutton66"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/for_button66"
+        android:background="@color/mainText"
+
+        android:visibility="invisible"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/button66_text"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/button55_text"
+        android:layout_alignBottom="@+id/button55_text"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_horizontal"
+        android:text="BUTTON44"
+        android:textColor="@color/mainText"
+        android:visibility="invisible" />
+
+    <!-- 右下隅のボタン -->
+    <ImageButton
+        android:id="@+id/imagebutton77"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentRight="true"
+        android:background="@color/mainText"
+        android:src="@drawable/for_button77"
+        android:visibility="invisible" />
+    <TextView
+        android:id="@+id/button77_text"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="oriBUTTON44"
+        android:textColor="@color/mainText"
+        android:gravity="center_horizontal"
+
+        android:visibility="invisible"
+        android:layout_alignBottom="@+id/button22_text"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <!-- オリジナルのボタン各3つ -->
+    <!-- オリジナルのボタンを追加する用のボタン -->
+    <ImageButton
+        android:id="@+id/addOriginals"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/add_originals_style"
+        android:src="@drawable/ic_add_white_18dp"
+        android:layout_below="@+id/button2"
+        android:layout_toLeftOf="@+id/first_text"
+        android:layout_toStartOf="@+id/first_text"/>
+
+    <!-- 右上 -->
+    <ImageButton
+        android:id="@+id/originalButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/original_sub_frame_style"
+        android:textColor="@color/mainText"
+
+        android:visibility="invisible"
+        android:layout_alignBaseline="@+id/originalButton4"
+        android:layout_alignBottom="@+id/originalButton4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp" />
+    <EditText
+        android:id="@+id/originalET2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/original_sub_frame_style"
+        android:textColor="@color/mainText"
+        android:imeOptions="actionDone"
+        android:singleLine = "true"
+        android:gravity="center"
+
+        android:visibility="invisible"
+        android:layout_alignBaseline="@+id/originalButton4"
+        android:layout_alignBottom="@+id/originalButton4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"/>
+    <!-- ノード上の文字 -->
+    <TextView
+        android:id="@+id/textOfoributton2"
+        android:layout_width="@dimen/textSizeofView_width"
+        android:layout_height="@dimen/textSizeofView_height"
+
+        android:layout_above="@+id/textOfbutton1"
+        android:layout_toEndOf="@+id/first_text"
+        android:layout_toRightOf="@+id/first_text"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textColor="@color/mainText"
+        android:textSize="@dimen/textSizeofNode" />
+
+    <!-- 下 -->
+    <ImageButton
+        android:id="@+id/originalButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/original_sub_frame_style"
+        android:textColor="@color/mainText"
+
+        android:visibility="invisible"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/first_text"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2" />
+
+    <EditText
+        android:id="@+id/originalET3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/originalButton3"
+        android:layout_alignStart="@+id/originalButton3"
+        android:layout_alignTop="@+id/originalButton3"
+        android:background="@drawable/original_sub_frame_style"
+        android:gravity="center"
+
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:textColor="@color/mainText"
+        android:visibility="invisible" />
+    <!-- ノード上の文字 -->
+    <TextView
+        android:id="@+id/textOfoributton3"
+        android:layout_width="@dimen/textSizeofView_width"
+        android:layout_height="@dimen/textSizeofView_height"
+
+        android:layout_above="@+id/imagebutton33"
+        android:layout_alignLeft="@+id/textOfbutton2"
+        android:layout_alignStart="@+id/textOfbutton2"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/mainText"
+        android:textSize="@dimen/textSizeofNode" />
+
+
+    <!-- 左上 -->
+    <ImageButton
+        android:id="@+id/originalButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/original_sub_frame_style"
+        android:textColor="@color/mainText"
+
+        android:visibility="invisible"
+        android:layout_marginBottom="47dp"
+        android:layout_above="@+id/button4"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignStart="@+id/button4" />
+    <EditText
+        android:id="@+id/originalET4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/original_sub_frame_style"
+        android:textColor="@color/mainText"
+        android:imeOptions="actionDone"
+        android:singleLine = "true"
+        android:gravity="center"
+
+        android:visibility="invisible"
+        android:layout_marginBottom="47dp"
+        android:layout_above="@+id/button4"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignStart="@+id/button4"/>
+    <!-- ノード上の文字 -->
+    <TextView
+        android:id="@+id/textOfoributton4"
+        android:layout_width="@dimen/textSizeofView_width"
+        android:layout_height="@dimen/textSizeofView_height"
+
+        android:layout_above="@+id/textOfbutton1"
+        android:layout_toLeftOf="@+id/first_text"
+        android:layout_toStartOf="@+id/first_text"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/mainText"
+        android:textSize="@dimen/textSizeofNode" />
+
+    <!-- 中心のボタン -->
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame_style"
+        android:textColor="@color/mainText"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/first_text"
+        android:layout_toRightOf="@+id/addOriginals"
+        android:layout_toEndOf="@+id/addOriginals" />
+    <!-- ノード上の文字 -->
+    <TextView
+        android:id="@+id/textOfbutton1"
+        android:layout_width="@dimen/biggerTextSizeofView_width"
+        android:layout_height="@dimen/biggerTextSizeofView_height"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textColor="@color/mainText"
+        android:textSize="@dimen/textSizeofNode" />
+
+    <ProgressBar
+        android:id="@+id/progressbar_horizontal"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/originalButton3"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false"
+        android:visibility="visible"/>
+
+
+</RelativeLayout>
