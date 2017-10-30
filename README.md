@@ -3,7 +3,8 @@
 ### Mobile App : https://github.com/jphacks/FK_1703  
   
 ### Server : https://github.com/jphacks/FK_1703_2  
-  
+
+[動画は現在エクスポート中です、少々お待ち下さい]
 [![Grandea](/img/top.png)](https://www.youtube.com/channel/UC4PtjOfZTbVp9DwtJv82Lzg)
 
 ## 製品概要
