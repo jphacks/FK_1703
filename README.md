@@ -8,7 +8,7 @@
 
 ## 【祝】Google Play Store リリース！
 ![Google Play Store](/img/googleplaystore.png)
-[ダウンロードはこちらから](https://play.google.com/store/apps/details?id=com.original.haruyai.brainstorming3 "Grandeaリンク") (只今、公開待ちです。少々お待ち下さい。)
+[ダウンロードはこちらから](https://play.google.com/store/apps/details?id=com.original.haruyai.brainstorming3 "Grandeaリンク")  
 
 ## 製品概要
 話し合っている内容を認識してアイデア出しを手助けするモバイルアプリケーション
@@ -86,7 +86,7 @@ Grandeaは、アイデア出しをする際のミーティング中に起動し�
 * さくらのレンタルサーバ
 
 #### デバイス
-* Android(Android 5.0以上)
+* Android(Android 4.1以上)
 
 ### 独自開発技術（Hack Dayで開発したもの）
 #### 2日間に開発した独自の機能・技術  
