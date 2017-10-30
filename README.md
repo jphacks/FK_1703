@@ -90,6 +90,6 @@ Grandeaは、アイデア出しをする際のミーティング中に起動し�
 
 ### 独自開発技術（Hack Dayで開発したもの）
 #### 2日間に開発した独自の機能・技術  
-* 音声認識とサーバへのHTTP通信の並列スレッド処理  
-* 独自アイデアマップの作成
+* 音声認識とサーバへのHTTP通信の並列スレッド処理 [(Code)](https://github.com/jphacks/FK_1703/blob/master/app/src/main/java/com/example/haruyai/brainstorming3/SpeechRecognition.java "SpeechRecognition.java")
+* 独自アイデアマップの作成 [(Code)](https://github.com/jphacks/FK_1703/blob/master/app/src/main/java/com/example/haruyai/brainstorming3/MainActivity.java "MainActivity.java")
 * 文章のキーワードを取得し、そのキーワードから2つのAPIを用いての関連キーワード取得 [(Code)](https://github.com/jphacks/FK_1703_2/blob/master/relation_char.php "relation_char.php")  
