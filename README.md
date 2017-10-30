@@ -7,7 +7,7 @@
 [![Grandea](/img/top.png)](https://youtu.be/TRCr_O83YDA)
 
 ## 【祝】Google Play Store リリース！
-![Google Play Store](/img/gps.jpg)
+![Google Play Store](/img/googleplaystore.png)
 
 ## 製品概要
 話し合っている内容を認識してアイデア出しを手助けするモバイルアプリケーション
