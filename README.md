@@ -4,8 +4,7 @@
   
 ### Server : https://github.com/jphacks/FK_1703_2  
 
-[動画は現在エクスポート中です、少々お待ち下さい]
-[![Grandea](/img/top.png)](https://www.youtube.com/channel/UC4PtjOfZTbVp9DwtJv82Lzg)
+[![Grandea](/img/top.png)](https://youtu.be/TRCr_O83YDA)
 
 ## 製品概要
 話し合っている内容を認識してアイデア出しを手助けするモバイルアプリケーション
