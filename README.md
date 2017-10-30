@@ -8,6 +8,7 @@
 
 ## 【祝】Google Play Store リリース！
 ![Google Play Store](/img/googleplaystore.png)
+[ダウンロードはこちらから](https://play.google.com/store/apps/details?id=com.original.haruyai.brainstorming3 "Grandeaリンク")
 
 ## 製品概要
 話し合っている内容を認識してアイデア出しを手助けするモバイルアプリケーション
