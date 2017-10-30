@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <!--<TextView
+        android:id="@+id/summary"
+
+        android:layout_width="310dp"
+        android:layout_height="550dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="left|top"
+        android:textColor="#555555"
+
+        android:textSize="12dp"
+        />-->
+    <Button
+        android:id="@+id/ssButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/hint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/summary_start_button"
+        android:text="START"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+
+    <TextView
+        android:id="@+id/hint"
+
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp"
+        android:gravity="center"
+        android:text="STARTボタンを押すことで録音が開始されます"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp"
+        android:visibility="visible" />
+
+
+    <!--
+    <Button
+        android:id="@+id/tomap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/summary"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/to_map"
+        android:text="to MAP"
+        android:textColor="@color/mainText"/>
+        -->
+
+</RelativeLayout>
