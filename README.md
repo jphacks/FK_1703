@@ -36,6 +36,8 @@ Grandeaは、アイデア出しをする際のミーティング中に起動し�
 その取得したデータと話した内容を議事録として表示します。  
 
 
+![アイデアマップ1](/img/ideamap1.png)
+![アイデアマップ2](/img/ideamap2.png)
 ![議事録](/img/minutes.png)
 ![システムフロー](/img/flow.png)
 
