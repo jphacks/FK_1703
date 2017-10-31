@@ -75,7 +75,9 @@ Grandeaは、アイデア出しをする際のミーティング中に起動し�
 * Google Knowledge Graph Search API
 * Google Suggest API
 * gooラボ キーワード抽出API
-* 自動要約API
+* [summpy](https://github.com/recruit-tech/summpy) (modified)
+
+![goo](/img/ideamap_1.png)
 
 #### フレームワーク・ライブラリ・モジュール
 * Android Studio
