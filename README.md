@@ -77,7 +77,7 @@ Grandeaは、アイデア出しをする際のミーティング中に起動し�
 * gooラボ キーワード抽出API
 * [summpy](https://github.com/recruit-tech/summpy) (modified)
 
-![goo](/img/ideamap_1.png)
+![goo](/img/sgoo.png)
 
 #### フレームワーク・ライブラリ・モジュール
 * Android Studio
