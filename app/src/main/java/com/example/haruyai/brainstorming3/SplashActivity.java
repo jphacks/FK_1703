@@ -31,6 +31,8 @@ public class SplashActivity extends Activity{
         // Android 6, API 23以上でパーミッシンの確認
         if(Build.VERSION.SDK_INT >= 23){
             checkMikePermission();
+        } else {
+            postprocessing();
         }
     }
 
