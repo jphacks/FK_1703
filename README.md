@@ -71,19 +71,22 @@ Grandeaは、アイデア出しをする際のミーティング中に起動し�
 ## 開発内容・開発技術
 ### 活用した技術
 #### API・データ
-* Google Cloud Translation API
 * Google Knowledge Graph Search API
 * Google Suggest API
 * gooラボ キーワード抽出API
-* [summpy](https://github.com/recruit-tech/summpy) (modified)
-
-![goo](/img/sgoo.png)
+* 自動要約API
+* Twitter API
 
 #### フレームワーク・ライブラリ・モジュール
 * Android Studio
 * XAMPP
 * CherryPy
+* BubblePicker
+* PulseView
+* Gson
 * Speech Recognizer
+* AudioRecord
+* MediaRecorder
 * Amazon Web Services
 * さくらのレンタルサーバ
 
